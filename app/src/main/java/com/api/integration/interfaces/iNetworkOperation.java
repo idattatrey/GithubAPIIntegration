@@ -8,7 +8,7 @@ import retrofit2.http.Headers;
 import rx.Observable;
 
 public interface iNetworkOperation {
-    @Headers({"Authorization: token 37d78f00904d9fb33e8ab538ec296d259c03f161", "Accept: application/vnd.github.cloak-preview"})
+    @Headers({"Authorization: token ce9431c099ae55e0a524394a8a406007c35c83f1", "Accept: application/vnd.github.cloak-preview"})
     @GET("search/commits?q=rails/rails")
     Observable<GithubCommitsAPIResponse> getCommits();
 }
